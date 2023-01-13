@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>The Great Kitchen & Resturent</title>
+  <link rel="shortcut icon" type="image/jpg" href="Images/fav.png" />
+</head>
+
+<body>
+  <a href="#"><button class="btn-scrolling"><i class="fas fa-arrow-up"></i></button></a>
+  <header>
+    <input type="checkbox" id="check" />
+    <nav class="nav-active">
+
+
+      <!-- <div class="search-box">
+        <input type="search"placeholder="Search..." />
+        <span class="fas fa-search" id="search-item"></span>
+      </div> -->
+      <div class="swapbar">
+        <ol>
+          <div class="left-ol">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#food">Food</a></li>
+            <li><a href="#offer">Offers</a></li>
+          </div>
+          <a class="brand-name">The GK&R</a>
+          <div class="right-ol">
+            <li><a href="#my-form">Contacts</a></li>
+            <li><a href="#About">About</a></li>
+          </div>
+        </ol>
+
+        <label for="check" class="bar">
+          <span class="fas fa-bars" id="bars"></span>
+          <span class="fas fa-times" id="times"></span>
+        </label>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home" class="background"></section>
+  <!-- food part  -->
+  <div id="food">
+    <h1 class="text-center">Our Food</h1>
+    <h4 class="center">Eat Healthy Be Healthy</h4>
+    <div class="pill-platform">
+      <button class="pills" id="breakfast" type="button">Breakfast</button>
+      <button class="pills" id="lunch" type="button">Lunch</button>
+      <button class="pills" id="snack" type="button">Snack</button>
+      <button class="pills" id="dinner" type="button">Dinner</button>
+      <button class="pills" id="drink" type="button">Drinks</button>
+      <button class="pills" id="dessert" type="button">Dessert</button>
+    </div>
+    <div class="food-section">
+      <div id="parent"></div>
+      <div class="cart">
+        <h1 class="center">Your selected Food</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Food</th>
+              <th>price</th>
+            </tr>
+          </thead>
+          <tbody id="cart"></tbody>
+        </table>
+        <button type="button" onclick="order()" class="order-button">Order</button>
+      </div>
+    </div>
+  </div>
+  <!-- food end here -->
+  <h2 class="offerring text-center">Limited Offers</h2>
+  <div id="offer" class="food-offers">
+
+    <img src="Images/Smallone.jpg">
+    <img src="Images/Smallone.jpg">
+    <img src="Images/Smallone.jpg">
+    <img src="Images/Smallone.jpg">
+    <img src="Images/Smallone.jpg">
+    <img src="Images/Smallone.jpg">
+  </div>
+
+
+  <form id="my-form" action="https://formspree.io/f/xwkaayqe" method="POST" class="message-form">
+    <div class="contacts">
+      <h2>Contact Us</h2>
+      <label for="fname">First Name</label>
+      <input type="text" placeholder="First Name" name="fname" autocomplete="off" required>
+
+      <label for="Lname">Last Name</label>
+      <input type="text" placeholder="Last Name" name="Lname" autocomplete="off" required>
+
+      <label for="email">Email</label>
+      <input type="email" placeholder="Enter email" name="email" autocomplete="off" required>
+
+      <label for="message">Message us</label>
+      <textarea class="message-area" placeholder="Type your message" name="message"
+        style="height: 200px; padding-bottom: 150px;" autocomplete="off" required></textarea>
+
+      <button class="msg-submit">Send Message</button>
+
+      <div id="status"></div>
+    </div>
+
+    <div class="maps">
+      <h2>Our Location</h2>
+      <iframe
+        src="https://maps.google.com/maps?&amp;&amp;hl=en&amp;q=Gwarko+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+        href="https://www.maps.ie/draw-radius-circle-map/"></a>
+    </div>
+  </form>
+
+  <div class="ordering-platform" id="About">
+    <h2>Our Ordering Partners</h2>
+    <div class="online-order">
+      <a href="https://foodmandu.com/" target="blank"><img src="Images/foodmandu2.jpg"></a>
+      <a href="https://pathao.com/np/" target="blank"><img src="Images/pathao2.png"></a>
+      <a href="https://www.bhojdeals.com/np/" target="blank"><img src="Images/Bhojdeal.jpg" class="bhoj"></a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="heading">
+      <h2>The Great Kitchen & Restaurants<sup>&trade;</sup></h2>
+    </div>
+    <div class="content">
+      <div class="services">
+        <h4>Our Services</h4>
+        <p><a href="#">Food Ordering</a></p>
+        <p><a href="#">Table Service</a></p>
+        <p><a href="#">Offers</a></p>
+        <p><a href="#">Table Booking</a></p>
+        <p><a href="#">Birthday Celebration</a></p>
+      </div>
+      <div class="social-media">
+        <h4>Social</h4>
+        <p>
+          <a href="https://www.facebook.com" target="blank"><i class="fab fa-facebook"></i> Facebook</a>
+        </p>
+        <p>
+          <a href="https://twitter.com" target="blank"><i class="fab fa-twitter"></i> Twitter</a>
+        </p>
+
+        <p>
+          <a href="https://www.instagram.com" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+        </p>
+      </div>
+
+      <div class="details">
+        <h4 class="address">Address</h4>
+        <p>
+          Gwarko, Lalitpur-07
+        </p>
+        <h4 class="mobile">Phone no.</h4>
+        <p><a href="tel:+977 01-4538272" </a> +977 01-4538272</p>
+        <h4 class="mail">Email us at</h4>
+        <p><a href="mailto:TGK&R21@gmail.com">TGK&R21@gmail.com</a></p>
+      </div>
+    </div>
+
+    <footer>
+      <hr />
+      &copy; 2021 Great Kitchen Pvt. Ltd.
+
+      <a href="#policy">Privacy Policy</a>
+    </footer>
+  </div>
+  <script src="data.js"></script>
+  <script src="index.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
